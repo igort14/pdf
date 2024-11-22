@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processador de PDFs</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Processador de PDFs</h1>
+        <form id="pdf-form" enctype="multipart/form-data">
+            <label for="pdf_file">Selecione o PDF:</label>
+            <input type="file" name="pdf_file" id="pdf_file" accept="application/pdf" required>
+
+            <label for="keyword">Palavra-chave:</label>
+            <input type="text" name="keyword" id="keyword" placeholder="Digite a palavra-chave" required>
+
+            <button type="submit">Processar PDF</button>
+        </form>
+
+        <div id="result" style="margin-top: 20px;">
+            <!-- Mensagem ou link para o PDF gerado será exibido aqui -->
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
